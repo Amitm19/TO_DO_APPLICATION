@@ -8,8 +8,8 @@ load_dotenv()
 
 MONGO_URI = os.getenv("MONGO_URI")
 clint= pymongo.MongoClient(MONGO_URI)
-db=clint.test
-collection=db['users']
+db=clint.todo_list
+collection=db['list']
 
 app =Flask(__name__)
 
@@ -32,7 +32,7 @@ def submit():
 
     return "Data submitted successfully"
 
-@app.route('/api')
+@app.route('/submittodoitem')
 def view():
     data = collection.find()
     data = list(data)
