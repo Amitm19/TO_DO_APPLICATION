@@ -22,7 +22,7 @@ def home():
 
 
 
-@app.route('/submit', methods=['POST'])
+@app.route('/submittodoitem', methods=['POST'])
 def submit():
     form_data = dict(request.form)
 
@@ -32,7 +32,7 @@ def submit():
 
     return "Data submitted successfully"
 
-@app.route('/submittodoitem')
+@app.route('/view')
 def view():
     data = collection.find()
     data = list(data)
