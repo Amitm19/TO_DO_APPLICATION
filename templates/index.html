@@ -9,19 +9,15 @@
     <!-- <p>Hi, Everyone! Welcome to the Registration form</p>
     <p>Today is {{ day_of_week }}</p>
     <p>Current time is {{ current_time }}</p> -->
-    <h1>Submit The Below Request</h1>
+    <h1>TO DO LIST</h1>
     <div class="centered">
         <form action="/submit" method="post">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" placeholder="Enter your name" name="name" required><br><br>
+                <label for="name">Item Name:</label><br>
+                <input type="text" id="name" name="Item Name"><br>
+                <label for="Description">Item Description:</label><br>
+                <input type="text" id="Description" name="Item Description"><br><br>
 
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" placeholder="Enter your email" name="email" required><br><br>    
-
-            <label for="password">Password:</label><br>
-            <input type="password" id="password" placeholder="Enter your password" name="password" required><br><br>
-
-            <input type="submit" value="Sign Up">
+            <input type="submit" value="Submit Request">
         </form>
     </div>
     
