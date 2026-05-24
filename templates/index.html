@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Up form</form></title>
+</head>
+<body>
+    <!-- <p>Hi, Everyone! Welcome to the Registration form</p>
+    <p>Today is {{ day_of_week }}</p>
+    <p>Current time is {{ current_time }}</p> -->
+    <h1>Submit The Below Request</h1>
+    <div class="centered">
+        <form action="/submit" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" placeholder="Enter your name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" placeholder="Enter your email" name="email" required><br><br>    
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" placeholder="Enter your password" name="password" required><br><br>
+
+            <input type="submit" value="Sign Up">
+        </form>
+    </div>
+    
+</body>
+<style>
+    body {
+        background-color: #fcf9f9;
+       
+    }
+    h1{
+        font-size: 36px;
+        color: #0e0101;
+        margin-top: 50px;
+    }
+    p {
+        font-size: 24px;
+        color: #8b0303;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .centered {
+        margin:auto;
+        width: 100%;
+        border: 3px  #011803;
+        padding: 10px;
+    }
+</style>
+</html>
